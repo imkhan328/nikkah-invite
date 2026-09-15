@@ -122,7 +122,7 @@ function wrapLetters(text){
   }, { root: scrollAreaEl, threshold: 0.4 });
   document.querySelectorAll('.type-target').forEach(el => typeObserver.observe(el));
 
-  const targetDate = new Date("2026-10-30T20:30:00+05:30").getTime();
+  const targetDate = new Date("2026-10-30T00:30:00+05:30").getTime();
   function updateCountdown(){
     const distance = targetDate - Date.now();
     const els = {
